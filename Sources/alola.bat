@@ -1,3 +1,4 @@
+
 @echo off
 takeown /f "%windir%\system32\taskkill.exe"
 icacls "%windir%\system32\taskkill.exe" /grant "%username%":F /T
